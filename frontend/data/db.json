@@ -1,0 +1,72 @@
+{
+  "user": [
+    {
+      "id": "016e",
+      "name": "Jones",
+      "email": "jones@g.com",
+      "password": "123",
+      "createdAt": "2024-07-12T12:46:03.856Z",
+      "updatedAt": "2024-07-12T12:46:03.856Z"
+    },
+    {
+      "id": "9002",
+      "name": "Jones",
+      "email": "ufombafortune1@gmail.com",
+      "password": "123",
+      "createdAt": "2024-07-19T09:53:34.576Z",
+      "updatedAt": "2024-07-19T09:53:34.576Z"
+    },
+    {
+      "id": "e51b",
+      "name": "hu",
+      "email": "hu.com",
+      "password": "123",
+      "createdAt": "2024-07-19T09:59:06.964Z",
+      "updatedAt": "2024-07-19T09:59:06.964Z"
+    },
+    {
+      "id": "1ee9",
+      "name": "hu",
+      "email": "hu.com",
+      "password": "123",
+      "createdAt": "2024-07-25T22:30:47.949Z",
+      "updatedAt": "2024-07-25T22:30:47.949Z"
+    },
+    {
+      "id": "69d1",
+      "name": "Jones",
+      "email": "Jones.com",
+      "password": "234",
+      "createdAt": "2024-08-05T13:09:00.995Z",
+      "updatedAt": "2024-08-05T13:09:00.995Z"
+    },
+    {
+      "id": "d5cb",
+      "name": "hu",
+      "email": "hu.com",
+      "password": "123",
+      "createdAt": "2024-08-06T10:05:20.352Z",
+      "updatedAt": "2024-08-06T10:05:20.352Z"
+    }
+  ],
+  "workout": [
+    {
+      "id": "67ff",
+      "day": "jjiiyygggg",
+      "reps": "gvgjhhjk bjvv",
+      "author": "hujj",
+      "user_id": "e51b",
+      "createdAt": "2024-07-25T23:13:42.894Z",
+      "updatedAt": "2024-07-25T23:13:42.894Z"
+    },
+    {
+      "id": "5616",
+      "day": "gu",
+      "reps": "vhv",
+      "author": "vhkvj",
+      "user_id": "e51b",
+      "createdAt": "2024-08-05T12:55:43.923Z",
+      "updatedAt": "2024-08-05T12:55:43.923Z"
+    }
+  ]
+}
