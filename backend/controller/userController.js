@@ -1,5 +1,8 @@
 const User = require("../model/userSchemaModel");
 const jwt = require("jsonwebtoken");
+const generateOtp = require("../utils/generateOtp");
+const sendMessage = require("../utils/generateMailer");
+const Wait = require("../model/waitModel");
 
 const createToken = (username) => {
   return jwt.sign({ username }, "strk1djfncsp", { expiresIn: "id" });
@@ -48,6 +51,37 @@ const signup = async (req, res) => {
   }
 };
 
+const validationOfUSer = async (req, res) => {
+  const otp = generateOtp("0");
+
+  await generateMailer(req, otp);
+};
+
+const verifyUserOtp = async (req, res) => {
+  try {
+    const user = await User.findOne({ email: email });
+    if (user) {
+      const wait = await Wait.findOne({ email: email, code: otp });
+
+      if (!wait || wait.length === 0) {
+        return res.status(404).json({ error: "OTP is invalid or expired" });
+      }
+
+      // check if otp is expired
+
+      return res.status(200).json({ message: "User verification successful" });
+    } else {
+      return res.status(404).json({ error: error?.error || "User Not Found" });
+    }
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ error: error?.error || "Internal server error" });
+  }
+};
+
 module.exports = {
   signup,
+  validationOfUSer,
+  verifyUserOtp,
 };
